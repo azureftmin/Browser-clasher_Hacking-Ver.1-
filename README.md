@@ -1,5 +1,4 @@
 ### Browser-Clush!!!
 ## Hacking taste.
 **画面はこんな感じ**
-![1](https://github.com/user-attachments/assets/6f89222d-0e4c-4bcd-9e67-f48b088d1a06)
-![2](https://github.com/user-attachments/assets/110a30aa-091b-4ef6-9c9b-8549dfea6ba3)
+![Browser-Clasher_Hacking-Ver.1](https://github.com/user-attachments/assets/ef0bd9fe-639c-431f-bc5d-df540a0bccd1)
