@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" src="style.css">
+	<meta http-equiv="refresh" content="0.1;2.html">
+	<title>Hack Complete!</title>
+	<script>
+		document.addEventListener('click', musicPlay);
+
+function bookmark() {
+	if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) {
+		var url = "2.html";
+		var title = "Idiot!";
+		
+		window.external.AddFavorite(url, title);
+	}
+}
+
+var xOff = 5;
+var yOff = 5;
+var xPos = 400;
+var yPos = -100;
+var flagRun = 1;
+
+function changeTitle(title) {
+	document.title = title;
+}
+
+function openWindow(url) {
+	aWindow = window.open(url, "_blank", 'menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes');
+}
+
+function proCreate() {	
+	for (var i = 0; i < 5; i++) {
+		openWindow('2.html');
+	}
+}
+
+function newXlt() {
+	xOff = Math.ceil(-6 * Math.random()) * 5 - 10;
+	window.focus();
+}
+
+function newXrt() {
+	xOff = Math.ceil(7 * Math.random())  * 5 - 10;
+	window.focus();
+}
+
+function newYup() {
+	yOff = Math.ceil(-6 * Math.random()) * 5 - 10;
+	window.focus();
+}
+
+function newYdn() {
+	yOff = Math.ceil( 7 * Math.random()) * 5 - 10;
+	window.focus();
+}
+
+function fOff(){
+	flagRun = 0;
+}
+
+function playBall() {
+    xPos += xOff;
+    yPos += yOff;
+    
+	if (xPos > screen.width - 357) newXlt();    
+	if (xPos < 0) newXrt();
+    
+	if (yPos > screen.height - 330) newYup(); 		
+	if (yPos < 0) newYdn();
+    
+	if (flagRun == 1) {
+        window.moveTo(xPos, yPos);
+        setTimeout('playBall()', 1);
+    }
+}
+
+/* [Oct 2021] Better code. */
+window.onload = function () {
+	flagRun = 1;
+	
+	playBall();
+	bookmark(); // Internet Explorer only (what a piece of shit)
+	
+	return true;
+}
+
+window.onmouseout = function () {
+	proCreate();
+
+	return null;
+};
+
+window.oncontextmenu = function() {
+	
+	return false;
+}
+
+window.onkeydown = function() {	
+	var keyCode = event.keyCode;
+	
+	if (keyCode == 17 || keyCode == 18 || keyCode == 46 || keyCode == 115) {	
+		alert("You are an idiot!"); 
+		proCreate();
+	}
+	
+	return null;
+}
+
+window.onbeforeunload = function() {
+    return "Are you an idiot?";
+};
+</script>
+</head>
+<style>
+.body h1{
+  font-size:  75px;       /* 文字サイズ指定 */
+  margin:  60px;          /* 空白指定 */
+  font-family:  serif;    /* フォントの種類指定 */
+}
+.tententen {
+  background: black;/*ボタン色*/
+  color: black;     /* 文字色指定 */
+}
+</style>
+<body class="body" bgcolor="red">
+<h1>I have successfully hacked you</h1><p></p><h1>Congratulations on </h1><p></p><h1>getting hacked!</h1>
+<script type="text/javascript">
+function openWin() {
+    window.open(
+        "index.html",
+        "_blank",
+        "menubar=0,width=600,height=400,top=100,left=100"
+    );
+}
+</script>
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+<input class="tententen" type="button" value="・" onmouseover="openWin()">
+</body>
+</html>
